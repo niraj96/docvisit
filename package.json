@@ -1,0 +1,23 @@
+{
+  "name": "red_apple",
+  "version": "1.0.0",
+  "description": "Assignments for Red Apple Company",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "author": "Niraj Kumar Singh",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "express-formidable": "^1.2.0",
+    "moment": "^2.29.1",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.16.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
