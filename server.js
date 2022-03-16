@@ -17,5 +17,5 @@ app.post("/check_slot",controllers.check_slot);
 //This is to insert data in patient table so that we can test
 app.post("/book_slot",controllers.book_slot);
 
-let PORT = 3000;
+let PORT = process.env.PORT || 3000;
 app.listen(PORT, ()=>{ console.log(` Seerver started on Port ${PORT}`)});
