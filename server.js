@@ -12,7 +12,7 @@ app.use(formidable());
 
 app.get("/test", (req,res)=>{
   res.status(200).json("testing done!")
-})
+});
 //api to insert doctor availability and doctor_time_slot
 app.post("/add_slot",controllers.create_slot);
 //api to check available slots 
