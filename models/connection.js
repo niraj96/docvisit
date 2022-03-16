@@ -1,10 +1,12 @@
 const { Sequelize} = require('sequelize');
 const dbconfig = require("../config/database.config.js");
-const DB_NAME = dbconfig.database;
-const USER_NAME = dbconfig.username;
-const PASSWORD = dbconfig.password;
+const config = dbconfig.prod;
+const HOST = config.host;
+const DB_NAME = config.database;
+const USER_NAME = config.username;
+const PASSWORD = config.password;
 const sequelize = new Sequelize(DB_NAME, USER_NAME,PASSWORD, {
-    host: 'localhost',
+    host: HOST,
     dialect:  'mysql',
 });
 
