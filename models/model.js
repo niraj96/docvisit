@@ -79,6 +79,6 @@ const PatientBookingSlot = sequelize.define('patient_booking_slots', {
     {} 
 );
 
-sequelize.sync();
+sequelize.sync({alter:true});
 
 module.exports = {PatientBookingSlot, DoctorTimeSlot, DoctorAvailabilty, sequelize};
